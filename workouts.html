@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>StartStrong – Workout Planning</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="logo">Start<strong>Strong</strong></div>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="workouts.html" class="active">Workouts</a>
+    <a href="nutrition.html">Nutrition</a>
+    <a href="stretching.html">Stretching</a>
+    <a href="videos.html">Videos</a>
+  </nav>
+</header>
+
+<main class="container">
+  <h1>Build your own workout plan</h1>
+  <p>
+    Use this page to sketch a simple weekly routine. Then plug in exercises
+    that fit your goal and equipment.
+  </p>
+
+  <!-- Simple “plan builder” -->
+  <section class="card">
+    <h2>Quick weekly template</h2>
+    <label>
+      Goal:
+      <select id="goalSelect">
+        <option value="recomp">Tone / body recomposition</option>
+        <option value="muscle">Build muscle</option>
+        <option value="strength">Get stronger</option>
+        <option value="fatloss">Lose fat</option>
+        <option value="endurance">Endurance / cardio</option>
+      </select>
+    </label>
+
+    <label>
+      Days per week:
+      <input id="daysInput" type="number" min="2" max="6" value="3" />
+    </label>
+
+    <button class="btn primary" id="makePlanBtn">Generate plan</button>
+    <p class="note">
+      This creates a <strong>template</strong>. You can change any day or exercise.
+    </p>
+
+    <div id="planOutput" class="plan-output"></div>
+  </section>
+
+  <!-- Explain how to design a plan -->
+  <section class="grid">
+    <article class="card">
+      <h2>Step 1 – Choose movement patterns</h2>
+      <p>Each week, try to hit:</p>
+      <ul>
+        <li>Push (push-ups, bench press, shoulder press)</li>
+        <li>Pull (rows, pull-ups, pulldowns)</li>
+        <li>Legs (squats, deadlifts, lunges, step-ups)</li>
+        <li>Core (planks, dead bugs, hollow holds)</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h2>Step 2 – Sets, reps, and rest</h2>
+      <ul>
+        <li><strong>Strength:</strong> 3–5 sets of 3–6 reps, longer rest.</li>
+        <li><strong>Muscle:</strong> 3–4 sets of 6–12 reps, medium rest.</li>
+        <li><strong>Endurance:</strong> 2–3 sets of 12–20 reps, short rest.</li>
+      </ul>
+      <p class="note">
+        Use a weight where you have 1–3 “good reps” left at the end of each set.
+      </p>
+    </article>
+
+    <article class="card">
+      <h2>Step 3 – Exercise ideas by goal</h2>
+      <ul>
+        <li><strong>Strength:</strong> squats, deadlifts, bench press, overhead press.</li>
+        <li><strong>Muscle:</strong> dumbbell presses, rows, leg presses, curls, raises.</li>
+        <li><strong>Fat loss:</strong> full-body circuits, brisk walking, intervals.</li>
+        <li><strong>Endurance:</strong> walking, jogging, cycling, rowing.</li>
+      </ul>
+    </article>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>Need a boost? Check out the <a href="videos.html">Motivation videos page</a>.</p>
+</footer>
+</body>
+</html>
